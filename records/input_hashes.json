@@ -1,0 +1,282 @@
+[
+  {
+    "artifact": "sasrec-video_games/9308/validation",
+    "sha256": "3418137e1f73a9568837813ffc731170484bd57faf85736d1529e6fb4841d3db"
+  },
+  {
+    "artifact": "sasrec-video_games/9308/test",
+    "sha256": "d4d4dfd82cc0e91c3be049f0486830998010b50a7a1fa530850572d26f58d374"
+  },
+  {
+    "artifact": "sasrec-video_games/42096/validation",
+    "sha256": "900fa3e1a2cc177ea50ed530aad62eeee97b68ca5855229f4481549ee89fdc21"
+  },
+  {
+    "artifact": "sasrec-video_games/42096/test",
+    "sha256": "75107d26de29c5a4a1f9084e11a7be387d57e1f3d1176aac1f013b480078c91d"
+  },
+  {
+    "artifact": "sasrec-video_games/169953/validation",
+    "sha256": "6e2fa7d6f2075f56da42b1d99b32af9b35f7f8ae545110d74a622be8aff19882"
+  },
+  {
+    "artifact": "sasrec-video_games/169953/test",
+    "sha256": "513f166448ebc00f6fbab888f66fa9a67a77655452e337868282ee2fb71405f8"
+  },
+  {
+    "artifact": "sasrec-video_games/231339/validation",
+    "sha256": "fbdbeee471f5c24f93a99218423735294802accadca3f6692cf4855940a484e3"
+  },
+  {
+    "artifact": "sasrec-video_games/231339/test",
+    "sha256": "a79495d911931ee38fb67e5045bcab2b0868a2b19a43e243f11fc6fa5bc0be77"
+  },
+  {
+    "artifact": "sasrec-video_games/799822/validation",
+    "sha256": "87b400ddde95bd14ec29fc67554a1b96ecad731321f81ef22639487f46c84e88"
+  },
+  {
+    "artifact": "sasrec-video_games/799822/test",
+    "sha256": "05d86111eeae759b361b762d937fe41ed99c2e325e8a25058d82681c170b136a"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/9308/validation",
+    "sha256": "f2a0d18eae3ba0ea88de89b5f524be13d562aa3eed2fa049d6c5d5c63e160ce3"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/9308/test",
+    "sha256": "7d1e3b8a4258a32d70a2bf58e477518b92d6ecbcd23ccbfb1345f40e923190c7"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/42096/validation",
+    "sha256": "abeb00bccd0207e8ab276a16143f32a50a07175e526866db20edc3ec00aa9298"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/42096/test",
+    "sha256": "4063e63e29bcfda06fb3169e8543907e4cd66814eb7ecffe48264b2781d230b0"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/169953/validation",
+    "sha256": "7d06e4f4b72ca0cf4394de23de77f5eee145a769030d0f8cad67ad477237424f"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/169953/test",
+    "sha256": "b12a86106efcf465d7313e0878695d327c657e5478c14ec9be12f9c41d4330e2"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/231339/validation",
+    "sha256": "c5cf01382617cf01862eb0a673de6703b4db3553e27d7de055a71c3b195151d0"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/231339/test",
+    "sha256": "d329fa4057ac1a065519df2108f64a8d6e7f4d9e21a95e3e933d894451c52fd0"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/799822/validation",
+    "sha256": "9ebfcc3f425a783654f6dca2f9381fbd47562ede86a6f255a1003f4cf1630779"
+  },
+  {
+    "artifact": "sasrec-cds_vinyl/799822/test",
+    "sha256": "3301939ddb39bbefacb7f0725a04eb43aeb10fc61fdb28e109e5db4dd0bcab17"
+  },
+  {
+    "artifact": "sasrec-shopping/9308/validation",
+    "sha256": "35ff66a9665f016a3612c8b6a27d1d21ddc04675ca9c04ede7fe5da5c2ea07cf"
+  },
+  {
+    "artifact": "sasrec-shopping/9308/test",
+    "sha256": "72a6cc64a310fde059a4262c142ce146da446a4d75517c3e1afe9739da78651c"
+  },
+  {
+    "artifact": "sasrec-shopping/42096/validation",
+    "sha256": "207d9d4ceb0cedcb0465d7d4a37f56faab880a85276bcc9e192012590549d743"
+  },
+  {
+    "artifact": "sasrec-shopping/42096/test",
+    "sha256": "d8166a47a0a17760de7c1aec2f4fb8d47e4556e477ee58a0ec0d258c4a59f81e"
+  },
+  {
+    "artifact": "sasrec-shopping/169953/validation",
+    "sha256": "d82e062e35a16d4d8bbaf622fd375418fe2394cfae67fd391175cb3b9387bd0c"
+  },
+  {
+    "artifact": "sasrec-shopping/169953/test",
+    "sha256": "537fa89d8f3b1fc9e4932a9233de30fb046674659fa68d4d981c7635352ed0d4"
+  },
+  {
+    "artifact": "sasrec-shopping/231339/validation",
+    "sha256": "981f5d5951536138367eb33334286ccd0abefaea83ff21207b73fdeaa6bb4ce4"
+  },
+  {
+    "artifact": "sasrec-shopping/231339/test",
+    "sha256": "639fcbb6655945a619f79f75c81f7b299ef6fb0a849d910d696c86122a134fd8"
+  },
+  {
+    "artifact": "sasrec-shopping/799822/validation",
+    "sha256": "603e1f10d361421ca70acaaf4bfb5d29b140ce1ee9c54325bde7d7a08d21b4f7"
+  },
+  {
+    "artifact": "sasrec-shopping/799822/test",
+    "sha256": "3838a867e306d15024a3440ab7daed78e3706fd9c41eca5ac5c7732d46048bbb"
+  },
+  {
+    "artifact": "sasrec-restaurants/9308/validation",
+    "sha256": "98a8dd655775f541f47e7b1feb7f5b36fe7f71d751348c89001595af7938be7e"
+  },
+  {
+    "artifact": "sasrec-restaurants/9308/test",
+    "sha256": "1bd602ac26e6a33ee58ea157aeb7dcb52bfbca83c9b3e0754f9fb19782d4b9d6"
+  },
+  {
+    "artifact": "sasrec-restaurants/42096/validation",
+    "sha256": "c43443abeed0cbacefb878be0830858756b207ce742eca265886d94132edb8de"
+  },
+  {
+    "artifact": "sasrec-restaurants/42096/test",
+    "sha256": "12f10cf03544997fdb9594929bd7014c238e869112320ded33e81d30938db8f0"
+  },
+  {
+    "artifact": "sasrec-restaurants/169953/validation",
+    "sha256": "4599345ff6c3195b0e5a79637fc387dd0f95f57ea297affd09ff8bbdb695253f"
+  },
+  {
+    "artifact": "sasrec-restaurants/169953/test",
+    "sha256": "cedd4873c49429dbd2dddb0dbfc922e39789aff96107d5d5647938b241b5cdd4"
+  },
+  {
+    "artifact": "sasrec-restaurants/231339/validation",
+    "sha256": "31f21285a4a5d8ac159e23ea55c057e52cea5b4eb80ad965cbaa34fbefab7700"
+  },
+  {
+    "artifact": "sasrec-restaurants/231339/test",
+    "sha256": "b2a373590211ab03182cd40cd0f5bbea339d517128c28b6df137e29855472fee"
+  },
+  {
+    "artifact": "sasrec-restaurants/799822/validation",
+    "sha256": "011e7d61470bff34c17719c084776c59e0a5621afe4ef65f77c169ec85069087"
+  },
+  {
+    "artifact": "sasrec-restaurants/799822/test",
+    "sha256": "c9e569d5bf4098ca5758fdbec36c7aaf60043a78be06af19115a5f557b6a2713"
+  },
+  {
+    "artifact": "gru-video_games/9308/validation",
+    "sha256": "a49796b059454bc5629b5bd40f1f139a9b17330c6dfc039192d1c61b1d5bec41"
+  },
+  {
+    "artifact": "gru-video_games/9308/test",
+    "sha256": "1dcb3f0de9afbc3b861405bdaf0621beb9e595c8b61382618478e1084467362f"
+  },
+  {
+    "artifact": "gru-video_games/42096/validation",
+    "sha256": "4d3f063ba87c655c569f85c6fad888b9360ff74f506e401ed40c9083749e4fab"
+  },
+  {
+    "artifact": "gru-video_games/42096/test",
+    "sha256": "b74606c21d50c96fa39a6025669ac24846031cd1ae76738d499edeeaf1ce5002"
+  },
+  {
+    "artifact": "gru-video_games/169953/validation",
+    "sha256": "c2e4e79195c86bbe75f3314b30b16dd42f8fffaa8825e93c06b42dbf95452b2a"
+  },
+  {
+    "artifact": "gru-video_games/169953/test",
+    "sha256": "cd341640bbbab7932c66981377abf745bc0e2b50cb34958c2398a07251ac701a"
+  },
+  {
+    "artifact": "gru-video_games/231339/validation",
+    "sha256": "cdb02d781599236bd8e61abbcad6f877e8ec45222753e22804de0881882972b2"
+  },
+  {
+    "artifact": "gru-video_games/231339/test",
+    "sha256": "fb371d18f377e0b5bc781a667587ff5a1158c69a1bd00498355d8c80aba67d60"
+  },
+  {
+    "artifact": "gru-video_games/799822/validation",
+    "sha256": "87c6ddb1fff451c89392f450a3f7e4ce212980d8b9c66acace005c2ea4337472"
+  },
+  {
+    "artifact": "gru-video_games/799822/test",
+    "sha256": "a2dd0686303bfae82a3bceb6ca49ee41bb339531f2fc4507092fa7b5f4061666"
+  },
+  {
+    "artifact": "gru-cds_vinyl/9308/validation",
+    "sha256": "7f3642415683822d156be6948cac0ca790515837c2f301322e494bd18c52afcf"
+  },
+  {
+    "artifact": "gru-cds_vinyl/9308/test",
+    "sha256": "2343d06419ee25a868d1215933515d3b1890059517659c1fc8d97bc7ce1c0efb"
+  },
+  {
+    "artifact": "gru-cds_vinyl/42096/validation",
+    "sha256": "3e41e80fbcebc3c2a01d44a2daf6f24499d394bdfb25e3cc6d2c4abb4991a067"
+  },
+  {
+    "artifact": "gru-cds_vinyl/42096/test",
+    "sha256": "23f5af07a80dfe46009bb989369b8abe0c9823c6e2134e1ae2ce9f568d3034a6"
+  },
+  {
+    "artifact": "gru-cds_vinyl/169953/validation",
+    "sha256": "6dd655b7c61b3ef1a7a6d1198d91aeb8b2f4849fb6fafdd5408219cabf49e569"
+  },
+  {
+    "artifact": "gru-cds_vinyl/169953/test",
+    "sha256": "d6b5c9243fe991cc3226461a41c8716d799ff7af121c5635c1562d7e60cf291a"
+  },
+  {
+    "artifact": "gru-cds_vinyl/231339/validation",
+    "sha256": "4c861a95b8cd71127152c905c8eae5a87f2090cbb045dd2a3f78bd688e0e7755"
+  },
+  {
+    "artifact": "gru-cds_vinyl/231339/test",
+    "sha256": "49932e94dbcf7b8018ca881f227037cc33696dd28a250bf7cb4c11d19adb3136"
+  },
+  {
+    "artifact": "gru-cds_vinyl/799822/validation",
+    "sha256": "db48b8f5bc4883b157dca130f08afea5cf26f3eee964fa7457174406c5be36b7"
+  },
+  {
+    "artifact": "gru-cds_vinyl/799822/test",
+    "sha256": "88b10f5316a62ad4921292cc2c59021164cd0d22703edf6fa364ef94a3499de2"
+  },
+  {
+    "artifact": "ssd4rec-video_games/9308/validation",
+    "sha256": "8970e700d7a36433ae47b17aca3439d5dcdb9a5f0facf1c4180d88c4673b85a9"
+  },
+  {
+    "artifact": "ssd4rec-video_games/9308/test",
+    "sha256": "ce04ac8ff7ef1b210d00e18a4c593d2270f4d88d0f4a4f134cd28faf35fe6bb4"
+  },
+  {
+    "artifact": "ssd4rec-video_games/42096/validation",
+    "sha256": "19081dde6e11f4e7579aeea2268a4ba9b80000dbec589848f764b7b1c8f73738"
+  },
+  {
+    "artifact": "ssd4rec-video_games/42096/test",
+    "sha256": "0e1cd32048c59b4c604d009e75b17548d1d92aec6436df6b15835c238b6aba33"
+  },
+  {
+    "artifact": "ssd4rec-video_games/169953/validation",
+    "sha256": "bccf66d5fbac64ca1c7be950ae71c70c6d79c606b09bc1a7adaf6db2d6239dfe"
+  },
+  {
+    "artifact": "ssd4rec-video_games/169953/test",
+    "sha256": "8c720ede9be7b805735fc2f62d0c10c8571afaf4f64465a5a2a5b6012e9f1b1e"
+  },
+  {
+    "artifact": "ssd4rec-video_games/231339/validation",
+    "sha256": "7815435802b1a21eeeccc35af16a7f886e91ce717bc04413e5c9e44d306a98c9"
+  },
+  {
+    "artifact": "ssd4rec-video_games/231339/test",
+    "sha256": "3209951a33717b2e5192efeae502d1d4dbb5d90caf7a3e6c4f4ddade7992cac8"
+  },
+  {
+    "artifact": "ssd4rec-video_games/799822/validation",
+    "sha256": "307452d1c90784041a723368ba3a56ad4f2c30cde5e764684385a80a19102295"
+  },
+  {
+    "artifact": "ssd4rec-video_games/799822/test",
+    "sha256": "e324bcae2a6aa372d2fc5e638909178fbe0369e61c95ce45d5c08c8385b2c81e"
+  }
+]

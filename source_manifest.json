@@ -1,0 +1,194 @@
+[
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/train.py",
+    "original_sha256": "3da0723867055333cfad215d9c3a44ccfddcb55243cd09391ef4563a9a31eb31",
+    "package_sha256": "3da0723867055333cfad215d9c3a44ccfddcb55243cd09391ef4563a9a31eb31",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/build_data.py",
+    "original_sha256": "950468a88dc3de51915c83137f2f708f2f0701e20925c03f1316c1a7c93aaf4b",
+    "package_sha256": "950468a88dc3de51915c83137f2f708f2f0701e20925c03f1316c1a7c93aaf4b",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/freeze.py",
+    "original_sha256": "f41e2ecab0edcb0951737c583d330d14c98ea1e708c0049d85e500f9ff7fa097",
+    "package_sha256": "f41e2ecab0edcb0951737c583d330d14c98ea1e708c0049d85e500f9ff7fa097",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/profile_cost.py",
+    "original_sha256": "48f8f2c478d061dcfaa8a33a195ab87020a37380bbb68e748226cc36a4a4c569",
+    "package_sha256": "48f8f2c478d061dcfaa8a33a195ab87020a37380bbb68e748226cc36a4a4c569",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/collect.py",
+    "original_sha256": "92d733fbb4abac11db8f2bc78030f095be17110a89edde64042000e70c42bc8f",
+    "package_sha256": "92d733fbb4abac11db8f2bc78030f095be17110a89edde64042000e70c42bc8f",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/fit_adaptation.py",
+    "original_sha256": "f144beab25859006b811acaad4d89be93b08152d56940506d2c1976fa5e7afbd",
+    "package_sha256": "f144beab25859006b811acaad4d89be93b08152d56940506d2c1976fa5e7afbd",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/fit_parent.py",
+    "original_sha256": "cd192b2642eae1c76d6cf1e61b9b6bc286731d20cdd42774f9828df375e09682",
+    "package_sha256": "cd192b2642eae1c76d6cf1e61b9b6bc286731d20cdd42774f9828df375e09682",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/score.py",
+    "original_sha256": "1bf2f5db075ffe5035fd076c7eb2dddb04828c283a0d5435eadcd776a8936492",
+    "package_sha256": "1bf2f5db075ffe5035fd076c7eb2dddb04828c283a0d5435eadcd776a8936492",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/runtime.py",
+    "original_sha256": "4484df336ff9bce045da6294fd31f9693c6d66155836a6c31aaabfead371c516",
+    "package_sha256": "4484df336ff9bce045da6294fd31f9693c6d66155836a6c31aaabfead371c516",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/paths.py",
+    "original_sha256": "79bb2e1cbe4069aa071482c6f2ba8e9111cdbf1f7fb8e30a1fcc73b91564b7aa",
+    "package_sha256": "79bb2e1cbe4069aa071482c6f2ba8e9111cdbf1f7fb8e30a1fcc73b91564b7aa",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_horizon_100_20261115/summarize.py",
+    "original_sha256": "edadc45e2e89e0f01e1cbc8e87b53d73047cce165c25df68a44ab1fce0dfe698",
+    "package_sha256": "edadc45e2e89e0f01e1cbc8e87b53d73047cce165c25df68a44ab1fce0dfe698",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_shared_gru_20261113/run.py",
+    "original_sha256": "6bd108aca9e5e7efb836c9756dd27fb566a984783a72d002b687a4d123a8327f",
+    "package_sha256": "6bd108aca9e5e7efb836c9756dd27fb566a984783a72d002b687a4d123a8327f",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_shared_gru_20261113/shared_ssd4rec.py",
+    "original_sha256": "821c87a4051f584817beae341cf311fdf200d415cffa1b92d0f9a098fcffea52",
+    "package_sha256": "821c87a4051f584817beae341cf311fdf200d415cffa1b92d0f9a098fcffea52",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_review_closure_20261115/run.py",
+    "original_sha256": "20dc5e3fbc7f8701d4721fa016c74c2c56c6a759262fb063c10302f2c5a65bff",
+    "package_sha256": "5c25958653b437d7d38a56a07b0c8ed1a1586ef8c264be8eb5cae2fd075cf987",
+    "changes": "private path and internal environment labels only"
+  },
+  {
+    "path": "reference_source/experiments/ipm_review_closure_20261115/align_steps.py",
+    "original_sha256": "86dd73a818a90fb8fc148818e42855ab8874d40bcde2cc35395c0004026328d0",
+    "package_sha256": "86dd73a818a90fb8fc148818e42855ab8874d40bcde2cc35395c0004026328d0",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_precision_closure_20261116/precision.py",
+    "original_sha256": "c0def188e4100ceca913733c719e09b13e116cbcd487dabc58d5b8f7b0f460b3",
+    "package_sha256": "c0def188e4100ceca913733c719e09b13e116cbcd487dabc58d5b8f7b0f460b3",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_precision_closure_20261116/analyze.py",
+    "original_sha256": "01930e55ad08b92bc6414c8d5f018331f25871f07f53089f1b25cab0e74b5d72",
+    "package_sha256": "01930e55ad08b92bc6414c8d5f018331f25871f07f53089f1b25cab0e74b5d72",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_precision_closure_20261116/regularization.py",
+    "original_sha256": "f2de3cfae58c8f9a96b59c3212713c87e3edacf537048c7ecb8dc865d19fec19",
+    "package_sha256": "f2de3cfae58c8f9a96b59c3212713c87e3edacf537048c7ecb8dc865d19fec19",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_precision_closure_20261116/select_l2.py",
+    "original_sha256": "f68b20e35575dad78809909f01212318af66a6dc0afe2130336642a8c5bcc591",
+    "package_sha256": "f68b20e35575dad78809909f01212318af66a6dc0afe2130336642a8c5bcc591",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_precision_closure_20261116/analyze_l2.py",
+    "original_sha256": "ed8334ef2df3c62aa6722e2e94e4e7addd48bb991d16c5dbf3bc3dfc0963467c",
+    "package_sha256": "ed8334ef2df3c62aa6722e2e94e4e7addd48bb991d16c5dbf3bc3dfc0963467c",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/scripts/train_shared_backbone_seed42.py",
+    "original_sha256": "700eef9444068b13c8fd24771c7535b0188a5c43100f63c1fc3b98f01cb526f9",
+    "package_sha256": "700eef9444068b13c8fd24771c7535b0188a5c43100f63c1fc3b98f01cb526f9",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/scripts/train_b9_extra_points.py",
+    "original_sha256": "1dd3d07b18460d3f09a7ef5372e8730f0c81e2d860f7e28a94f9ae6a2469772e",
+    "package_sha256": "1dd3d07b18460d3f09a7ef5372e8730f0c81e2d860f7e28a94f9ae6a2469772e",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/scripts/build_yelp_shared_backbone_split.py",
+    "original_sha256": "faad2f7feb830d5227387954e0cfde8386b0c00a2c51d4a7c8ecc2693ccd1dd7",
+    "package_sha256": "faad2f7feb830d5227387954e0cfde8386b0c00a2c51d4a7c8ecc2693ccd1dd7",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/src/shared_backbone/__init__.py",
+    "original_sha256": "14b716faf34ed2cab012c35d4a8643aa1314b619d37d3eaadc4787f1d330711c",
+    "package_sha256": "14b716faf34ed2cab012c35d4a8643aa1314b619d37d3eaadc4787f1d330711c",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/src/shared_backbone/model.py",
+    "original_sha256": "f52f17081271401ca0105038d107ac5f399b5efff774b7b48c3766200b16c9f9",
+    "package_sha256": "f52f17081271401ca0105038d107ac5f399b5efff774b7b48c3766200b16c9f9",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/paper-tois-revision/post-rejection/ipm_20261111/b0_audit/audit_amazon.py",
+    "original_sha256": "4d77b14ff3d3a7ca634e23849db9ec062b50463273a27ccb9f18928e1bd6eef5",
+    "package_sha256": "4d77b14ff3d3a7ca634e23849db9ec062b50463273a27ccb9f18928e1bd6eef5",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/paper-tois-revision/qa/20261112_ipm_yelp_replication/build_yelp.py",
+    "original_sha256": "e77b2fbe5d1756d2eb3611fcef4d08d9883e6e5096cba3e27fafae2522e62397",
+    "package_sha256": "e77b2fbe5d1756d2eb3611fcef4d08d9883e6e5096cba3e27fafae2522e62397",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/paper-tois-revision/qa/20261116_ipm_topk_theory/check_certificate.py",
+    "original_sha256": "2f8efc41e5da526803b78e5ba3dbb14098bc0f010f13f8fcc3540bdc82ca95c3",
+    "package_sha256": "2f8efc41e5da526803b78e5ba3dbb14098bc0f010f13f8fcc3540bdc82ca95c3",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/paper-tois-revision/qa/20261116_ipm_topk_theory/novelty/probe_fixed_outputs.py",
+    "original_sha256": "f817dc9751c1391da97d3ef2cbd70bccca51cd090b83fc17af34acfa6f13d66a",
+    "package_sha256": "f817dc9751c1391da97d3ef2cbd70bccca51cd090b83fc17af34acfa6f13d66a",
+    "changes": "none"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/replay_vg_20261111/replay.py",
+    "original_sha256": "22f9d558dc6aedc7d12c660fe33ba2d4357897439a4cedabd9fb775ad15a6ede",
+    "package_sha256": "22f9d558dc6aedc7d12c660fe33ba2d4357897439a4cedabd9fb775ad15a6ede",
+    "changes": "private path and internal environment labels only"
+  },
+  {
+    "path": "reference_source/experiments/ipm_global_time_20261111/cds_replay_s7_20261112/replay.py",
+    "original_sha256": "ca8f818f58b42509f2feed85c124ac47c766018e4b1c7cf3f685c57fe763adac",
+    "package_sha256": "ca8f818f58b42509f2feed85c124ac47c766018e4b1c7cf3f685c57fe763adac",
+    "changes": "private path and internal environment labels only"
+  },
+  {
+    "path": "scripts/scope_policy.py",
+    "original_sha256": "1bf2f5db075ffe5035fd076c7eb2dddb04828c283a0d5435eadcd776a8936492",
+    "package_sha256": "f6fe8b9bbfb6b4548be0d3f45cebfad1174b169e600a4a4de6b73a96aa498b95",
+    "changes": "verbatim policy function with portable standard-library imports"
+  }
+]

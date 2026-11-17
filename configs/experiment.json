@@ -1,0 +1,129 @@
+{
+  "seeds": [
+    9308,
+    42096,
+    169953,
+    231339,
+    799822
+  ],
+  "horizons": [
+    10,
+    50,
+    100
+  ],
+  "validation_interval": 2,
+  "base_epochs": 20,
+  "batch_size": 2048,
+  "eval_batch_size": 512,
+  "thresholds": {
+    "delta_hit": -0.001,
+    "deep": 0.25,
+    "bytes": 1048576
+  },
+  "exact_methods": [
+    "S0",
+    "S4a",
+    "S5",
+    "S6"
+  ],
+  "methods": [
+    "S4a",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "Replay"
+  ],
+  "learning_rates": {
+    "S0": 0.001,
+    "S4a": 0.003,
+    "S5": 0.0003,
+    "S6": 0.001,
+    "S7": 0.001,
+    "S8": 0.001,
+    "Replay": 0.001,
+    "Distill_1": 0.001,
+    "Distill_4": 0.001
+  },
+  "reg_lambda": 0.0001,
+  "core_sha256": "d9db08e6eaebaf9e63bec4847bce4e60f08c58a01195591f2c763e074466d30b",
+  "amazon_parent_freeze_sha256": "bc5b6b3dc7632f426db0b08504a3f23198ec7b9bfe4f700b58f2ca81e4a489d8",
+  "previous_horizon_lock_sha256": "240169a1d74c50fc3f695a8d0e6a9ce6057ae32cb66397bb40bc6a77b42d598d",
+  "data": {
+    "amazon": {
+      "development": "6d862f46695ef2d5b7665163c8ed70f3860abe412f3cd79510fc50907f2abaac",
+      "test": "5df309888b6f70da2570ff2aaeed71ed9e5e648cc812b9e7c68a68c185b97ad2",
+      "long_covered_validation": {
+        "video_games": 2167,
+        "cds_vinyl": 5498
+      },
+      "long_covered_test": {
+        "video_games": 2986,
+        "cds_vinyl": 10381
+      }
+    },
+    "yelp": {
+      "development": "92d313dca09d2117d94248689c05a1fed259434870d1fd99652ff9a368c800fe",
+      "test": "1d8ff867e7b9569ad31138ab328b8d9b6a7032ccd4f93656b3457ce2f929e97b",
+      "long_covered_validation": {
+        "shopping": 934,
+        "restaurants": 14441
+      },
+      "long_covered_test": {
+        "shopping": 1110,
+        "restaurants": 17772
+      }
+    }
+  },
+  "groups": {
+    "sasrec-video_games": {
+      "source": "amazon",
+      "backbone": "sasrec",
+      "target": "video_games",
+      "steps": 110,
+      "extra_comparisons": [
+        "Distill_1",
+        "Distill_4"
+      ]
+    },
+    "sasrec-cds_vinyl": {
+      "source": "amazon",
+      "backbone": "sasrec",
+      "target": "cds_vinyl",
+      "steps": 452
+    },
+    "sasrec-shopping": {
+      "source": "yelp",
+      "backbone": "sasrec",
+      "target": "shopping",
+      "steps": 73
+    },
+    "sasrec-restaurants": {
+      "source": "yelp",
+      "backbone": "sasrec",
+      "target": "restaurants",
+      "steps": 1194
+    },
+    "gru-video_games": {
+      "source": "amazon",
+      "backbone": "gru",
+      "target": "video_games",
+      "steps": 110
+    },
+    "gru-cds_vinyl": {
+      "source": "amazon",
+      "backbone": "gru",
+      "target": "cds_vinyl",
+      "steps": 452
+    },
+    "ssd4rec-video_games": {
+      "source": "amazon",
+      "backbone": "ssd4rec",
+      "target": "video_games",
+      "steps": 110
+    }
+  },
+  "protocol": "Original global chronological splits, fixed catalogs, matched >365-day covered target validation and test requests. Reuse each trained Base and the authenticated last adaptation state at epoch 50 or 10. Fit remaining Base seeds with the original recipe. Every adaptive method may select an earlier even-epoch checkpoint by target validation NDCG (earliest tie) at each of the three horizons. Lock all validation choices within a rotation before reading its test predictions. The prior test windows are reused and earlier results informed the choice to study horizon.",
+  "claim_checks": "For each rotation, compare epochs selected, target performance, signed non-target Hit@10, mean and deep replacement, and RBO. Recompute the four existing selection policies from validation at all three horizons. Report paired seed intervals for within-method changes and policy contrasts; show results even if the winner or direction changes.",
+  "boundary": "SASRec four rotations, GRU two Amazon rotations, BiSSD one Amazon rotation. Fixed weight distillation comparisons remain specific to SASRec Video Games and do not enlarge the original seven-candidate selection policy. The original main comparisons share protocols; specialized timing, mechanism and per-user-holdout diagnostics retain their distinct budgets."
+}

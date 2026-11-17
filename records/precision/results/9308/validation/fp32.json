@@ -1,0 +1,241 @@
+{
+  "binding": {
+    "source": "c0def188e4100ceca913733c719e09b13e116cbcd487dabc58d5b8f7b0f460b3",
+    "old_plan": "fb01748926b5c543840af6d342649b46faee1bcda1ca219192ad71ddd6e276cb",
+    "data": "6d862f46695ef2d5b7665163c8ed70f3860abe412f3cd79510fc50907f2abaac",
+    "original_receipt": "3418137e1f73a9568837813ffc731170484bd57faf85736d1529e6fb4841d3db",
+    "parent": "5c70a2f8db46dca48b11a8e78145e25a87779f5d34058f665a9f9949617eaf60",
+    "seed": 9308,
+    "phase": "validation",
+    "precision": "fp32",
+    "smoke": false
+  },
+  "weights": {
+    "S0": {
+      "path": "/artifact/deltagate_ipm_global_time_20261111_r1/experiments/ipm_global_time_20261111/runs/9308/S0.pt",
+      "sha256": "5c70a2f8db46dca48b11a8e78145e25a87779f5d34058f665a9f9949617eaf60",
+      "dtypes": [
+        "torch.float32"
+      ],
+      "epoch": 0
+    },
+    "S8": {
+      "path": "/artifact/deltagate_ipm_global_time_20261111_r1/experiments/ipm_global_time_20261111/runs/9308/S8.pt",
+      "sha256": "a58309db160c2583076e042bc2d704274dad63d6c6726c8831a9842df1c7b784",
+      "dtypes": [
+        "torch.float32"
+      ],
+      "epoch": 2
+    },
+    "Replay": {
+      "path": "/artifact/deltagate_ipm_horizon_100_20261115/runs/sasrec-video_games/9308/Replay/best-12.pt",
+      "sha256": "70a8c1261e2674a037c53feedd5a733a9b52a3c7ae17910ac72e43ee2caf6b53",
+      "dtypes": [
+        "torch.float32"
+      ],
+      "epoch": 12
+    },
+    "Distill_1": {
+      "path": "/artifact/deltagate_ipm_review_closure_20261115/runs/video_games/Distill_1/9308/replay.pt",
+      "sha256": "15d90b01192689a1338d180c1a3a5cde7f37a5c906042f7e497562b636d1a249",
+      "dtypes": [
+        "torch.float32"
+      ],
+      "epoch": 2
+    },
+    "Distill_4": {
+      "path": "/artifact/deltagate_ipm_review_closure_20261115/runs/video_games/Distill_4/9308/replay.pt",
+      "sha256": "ffea6205b32230ab65a2cb7f2d8a3e861265849295a2ba6c97b4d19dd721ec63",
+      "dtypes": [
+        "torch.float32"
+      ],
+      "epoch": 2
+    }
+  },
+  "metrics": {
+    "cds_vinyl": {
+      "S0": {
+        "n": 18168,
+        "hit": 0.008751651254953766,
+        "delta_hit": 0.0,
+        "ndcg": 0.0043911812304535495,
+        "deep": 0.0,
+        "replaced": 0.0,
+        "rbo": 1.0000000000000002,
+        "top1": 0.0,
+        "both_miss_n": 18009,
+        "deep_both_miss_n": 0,
+        "deep_both_miss_all": 0.0,
+        "deep_given_both_miss": 0.0,
+        "original_rank_mismatch": 12921,
+        "original_top10_mismatch": 14728,
+        "boundary_tie_rate": 5.504183179216204e-05
+      },
+      "S8": {
+        "n": 18168,
+        "hit": 0.009026860413914576,
+        "delta_hit": 0.00027520915896081,
+        "ndcg": 0.004424310166907755,
+        "deep": 0.26651254953764864,
+        "replaced": 3.5225671510347865,
+        "rbo": 0.6188825444574791,
+        "top1": 0.464002642007926,
+        "both_miss_n": 17968,
+        "deep_both_miss_n": 4811,
+        "deep_both_miss_all": 0.2648062527520916,
+        "deep_given_both_miss": 0.2677537845057881,
+        "original_rank_mismatch": 12962,
+        "original_top10_mismatch": 14782,
+        "boundary_tie_rate": 0.0
+      },
+      "Replay": {
+        "n": 18168,
+        "hit": 0.013760457948040511,
+        "delta_hit": 0.005008806693086745,
+        "ndcg": 0.006641751867297493,
+        "deep": 0.8929436371642449,
+        "replaced": 7.521576398062527,
+        "rbo": 0.21983513751039233,
+        "top1": 0.8512219286657859,
+        "both_miss_n": 17844,
+        "deep_both_miss_n": 15962,
+        "deep_both_miss_all": 0.8785777190664905,
+        "deep_given_both_miss": 0.8945303743555256,
+        "original_rank_mismatch": 12697,
+        "original_top10_mismatch": 13956,
+        "boundary_tie_rate": 5.504183179216204e-05
+      },
+      "Distill_1": {
+        "n": 18168,
+        "hit": 0.008476442095992954,
+        "delta_hit": -0.00027520915896081175,
+        "ndcg": 0.004243906882205408,
+        "deep": 0.006825187142228093,
+        "replaced": 1.4345552619991193,
+        "rbo": 0.8416347775802402,
+        "top1": 0.1933069132540731,
+        "both_miss_n": 18001,
+        "deep_both_miss_n": 123,
+        "deep_both_miss_all": 0.006770145310435931,
+        "deep_given_both_miss": 0.006832953724793067,
+        "original_rank_mismatch": 12995,
+        "original_top10_mismatch": 14924,
+        "boundary_tie_rate": 5.504183179216204e-05
+      },
+      "Distill_4": {
+        "n": 18168,
+        "hit": 0.008861734918538089,
+        "delta_hit": 0.00011008366358432331,
+        "ndcg": 0.00442297344669051,
+        "deep": 0.00022016732716864817,
+        "replaced": 0.8861734918538089,
+        "rbo": 0.902688660935855,
+        "top1": 0.1177344782034346,
+        "both_miss_n": 18002,
+        "deep_both_miss_n": 4,
+        "deep_both_miss_all": 0.00022016732716864817,
+        "deep_given_both_miss": 0.00022219753360737697,
+        "original_rank_mismatch": 12926,
+        "original_top10_mismatch": 14820,
+        "boundary_tie_rate": 0.0
+      }
+    },
+    "movies_tv": {
+      "S0": {
+        "n": 68948,
+        "hit": 0.02520740268028079,
+        "delta_hit": 0.0,
+        "ndcg": 0.012882810327636109,
+        "deep": 0.0,
+        "replaced": 0.0,
+        "rbo": 1.0000000000000002,
+        "top1": 0.0,
+        "both_miss_n": 67210,
+        "deep_both_miss_n": 0,
+        "deep_both_miss_all": 0.0,
+        "deep_given_both_miss": 0.0,
+        "original_rank_mismatch": 54642,
+        "original_top10_mismatch": 51644,
+        "boundary_tie_rate": 1.4503683935719673e-05
+      },
+      "S8": {
+        "n": 68948,
+        "hit": 0.021987584846551025,
+        "delta_hit": -0.0032198178337297656,
+        "ndcg": 0.011307253552990431,
+        "deep": 0.31539711086616,
+        "replaced": 3.7320299356036433,
+        "rbo": 0.5890956730847284,
+        "top1": 0.517331902303185,
+        "both_miss_n": 66974,
+        "deep_both_miss_n": 21334,
+        "deep_both_miss_all": 0.3094215930846435,
+        "deep_given_both_miss": 0.3185415235763132,
+        "original_rank_mismatch": 55688,
+        "original_top10_mismatch": 51692,
+        "boundary_tie_rate": 1.4503683935719673e-05
+      },
+      "Replay": {
+        "n": 68948,
+        "hit": 0.025004351105180716,
+        "delta_hit": -0.00020305157510007443,
+        "ndcg": 0.012690403198346028,
+        "deep": 0.7828218367465336,
+        "replaced": 6.177322039798109,
+        "rbo": 0.34079000488070216,
+        "top1": 0.7728578058826943,
+        "both_miss_n": 66525,
+        "deep_both_miss_n": 52402,
+        "deep_both_miss_all": 0.7600220455995823,
+        "deep_given_both_miss": 0.7877038707252912,
+        "original_rank_mismatch": 54286,
+        "original_top10_mismatch": 48297,
+        "boundary_tie_rate": 1.4503683935719673e-05
+      },
+      "Distill_1": {
+        "n": 68948,
+        "hit": 0.024250159540523293,
+        "delta_hit": -0.0009572431397574972,
+        "ndcg": 0.01254540134535826,
+        "deep": 0.009935023495967976,
+        "replaced": 1.4726025410454255,
+        "rbo": 0.8319577988020977,
+        "top1": 0.22464756048036202,
+        "both_miss_n": 67087,
+        "deep_both_miss_n": 674,
+        "deep_both_miss_all": 0.009775482972675059,
+        "deep_given_both_miss": 0.010046655834960573,
+        "original_rank_mismatch": 54919,
+        "original_top10_mismatch": 52059,
+        "boundary_tie_rate": 1.4503683935719673e-05
+      },
+      "Distill_4": {
+        "n": 68948,
+        "hit": 0.024612751638916283,
+        "delta_hit": -0.0005946510413645072,
+        "ndcg": 0.012700816471539039,
+        "deep": 0.0005511399895573476,
+        "replaced": 0.934240297035447,
+        "rbo": 0.8933660509671577,
+        "top1": 0.14268724255961013,
+        "both_miss_n": 67132,
+        "deep_both_miss_n": 38,
+        "deep_both_miss_all": 0.0005511399895573476,
+        "deep_given_both_miss": 0.0005660489781326342,
+        "original_rank_mismatch": 54841,
+        "original_top10_mismatch": 51519,
+        "boundary_tie_rate": 0.0
+      }
+    }
+  },
+  "runtime": {
+    "source": "d9db08e6eaebaf9e63bec4847bce4e60f08c58a01195591f2c763e074466d30b",
+    "torch": "2.7.1+cu118"
+  },
+  "arrays_sha": "e325ea416e691cd6080e24e46e400d1d8d76c90c4358a7a5ee5ff9a5e390b20a",
+  "seconds": 17.691420664079487,
+  "peak_allocated": 2404139008,
+  "matmul_precision": "highest",
+  "cuda_tf32": false,
+  "cudnn_tf32": false
+}
