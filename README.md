@@ -1,37 +1,58 @@
 # Shared recommender adaptation scopes
 
-This repository contains the result records and study code for *Choosing Adaptation Scopes for Dormant-User Recovery in Shared Recommenders*.
+Code and experiment records for *Choosing Adaptation Scopes for Dormant-User
+Recovery in Shared Recommenders*. Updating a recommender for returning users
+in one domain can change the lists it serves in others. We compare which
+model components to update under constraints on ranking stability and update size.
 
-## Quick check
+## Quickstart
 
-Python 3.9 or later is sufficient for the result checker. No dataset download or accelerator is needed.
+From the repository root, run the following with Python 3.9 or later. The
+checker uses only the standard library and the included records.
 
-    python3 -B scripts/reproduce_results.py
+```bash
+python3 -B scripts/reproduce_results.py
+```
 
-The checker recomputes validation choices, target NDCG@10 differences, paired seed-level 95% t intervals, and non-target Replay/distillation contrasts. It covers seven backbone/target settings, five matched seeds, and 10-, 50-, and 100-epoch records. It also checks the separate L2 and precision diagnostics, packaged source hashes, and Python syntax. A successful run ends with PASS.
+The checker recomputes validation choices, paired test differences and their
+95% intervals, including how replay and distillation affect non-target lists.
+It covers seven encoder and target settings with five matched seeds. The
+main comparison allows 50 adaptation epochs; the 10- and 100-epoch records
+support checks at shorter and longer budgets.
 
-The main comparison uses 50 epochs; 100 epochs are a horizon check, and the 10-epoch records are a separate diagnostic. The statistics use paired seed-level differences. Intervals containing zero are not equivalence tests.
+Each output line gives the two choices under exact non-target preservation:
+`exact` without a size limit and `1MiB` with the cap. For example,
+`exact=S6, 1MiB=S4a` denotes Head + Time and Additive Time. `compact-exact`
+is the capped choice's test NDCG@10 minus the uncapped choice's, in percentage
+points. The check ends with `PASS`.
 
-This is result-level reproduction. The quick check does not train models or rescore request-level predictions.
+## Read the code and records
 
-## Files
+| To trace | Start here |
+| --- | --- |
+| Data sources, time splits, and cohort construction | [Data guide](DATA.md) and [experiment configuration](configs/experiment.json) |
+| Validation screening and selection | [Scope policy](scripts/scope_policy.py) |
+| Per-seed validation and test metrics | [Paired records](records/paired_records.json), indexed by setting, seed, epoch budget, and scope |
+| Target adapters and shared updates | [Model definitions](reference_source/experiments/ipm_global_time_20261111/train.py) and [adaptation runner](reference_source/experiments/ipm_horizon_100_20261115/fit_adaptation.py) |
+| Scoring and validation-to-test handoff | [Scoring script](reference_source/experiments/ipm_horizon_100_20261115/score.py) |
 
-- records/ contains per-seed validation and test summaries and diagnostic results. Request-level prediction arrays are not included.
-- configs/experiment.json records seeds, learning rates, horizons, cohorts, scopes, and screening thresholds.
-- scripts/ contains the result checker and validation policy function.
-- reference_source/ is an inspection snapshot of the study's model, training, scoring, data-construction, replay, and theory-check code. Relative directory layout is retained.
-- source_manifest.json and file_hashes.json record source provenance and package integrity.
-- DATA.md describes data sources and construction entry points.
-- THIRD_PARTY.md records the external components that are not redistributed.
+The core scope labels are `S0` (Base), `S4a` (Additive Time), `S5` (DeltaGate),
+`S6` (Head + Time), `S7` (Regularized Shared), `S8` (Shared FT), and `Replay`.
+The [records](records/) also include separate regularization and precision
+diagnostics.
 
-## Full training
+## Rerunning training
 
-Obtain Amazon Reviews 2018 and the Yelp Open Dataset from their providers and follow their access and reuse terms. The raw reviews, identifiers, trained weights, environment bindings, and request-level arrays are not included.
+The quickstart starts from saved metrics. To rerun training, rebuild the
+model inputs from Amazon Reviews 2018 and the Yelp Open Dataset, configure
+the runtime, and obtain or train the Base checkpoints. Rescoring individual
+requests also requires the corresponding model checkpoints. Raw reviews,
+request-level predictions, and trained weights are not included.
 
-The SASRec and GRU runs used Python 3.9+ with PyTorch 2.7.1+cu118. SSD4Rec BiSSD used a separate Python 3.10.15 environment with PyTorch 2.1.1+cu118, mamba-ssm 2.2.2, causal-conv1d 1.4.0, RecBole 1.2.0, and Transformers 4.46.3. These are separate environments. NumPy and SciPy are needed for the optional mathematical checks. The SSD4Rec CPU fallback is a shape fixture, not the BiSSD encoder.
+SASRec and GRU used Python 3.9+ and PyTorch 2.7.1+cu118. SSD4Rec BiSSD used
+Python 3.10.15, PyTorch 2.1.1+cu118, `mamba-ssm==2.2.2`,
+`causal-conv1d==1.4.0`, `recbole==1.2.0`, and `transformers==4.46.3`.
+See [third-party dependencies](THIRD_PARTY.md) for the upstream code.
 
-Training from this snapshot is not a one-command reproduction. It requires the original preprocessing outputs, base checkpoints or base training, environment bindings, and the separately obtained SSD4Rec dependencies. No raw data or checkpoints are redistributed.
-
-## License
-
-The MIT License in this repository covers the original study-specific code and documentation included here. Dataset terms and external component licenses remain separate.
+The [MIT License](LICENSE) covers our study code and documentation. Datasets
+and third-party components retain their respective terms.
